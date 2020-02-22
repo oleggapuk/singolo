@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Singolo Part 1</title>
-  <link rel="stylesheet" href="singolo1.css">
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singolo Part 1</title>
+    <link rel="stylesheet" href="singolo1.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header" id="home">
+        <a href="#" class="header__logo">
+          SINGOLO
+          <span class="header__logo-star">*</span>
+        </a>
+
+        <nav class="header__navbar">
+          <ul class="header__nav">
+            <li class="header__nav-item">
+              <a href="#home" class="header__nav-link active">HOME</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">SERVICES</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">PORTFOLIO</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">ABOUT</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="slider">
+        <div class="slider__container">
+          <button type="button" class="slider__btn slider__btn_prev">
+            <img src="assets/chev.png" alt="previous slide">
+          </button>
+
+          <div class="slider__content">
+            <div class="slider__img-container">
+              <img src="assets/iPhone Vertical.png" class="slider__img slider__img_1" alt="iphone vertical orientation">
+              <img src="assets/iPhone Horizontal.png" class="slider__img slider__img_2" alt="iphone horizontal orientation">
+            </div>
+          </div>
+
+          <button type="button" class="slider__btn slider__btn_next">
+            <img src="assets/chev-2.png" alt="previous slide">
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
