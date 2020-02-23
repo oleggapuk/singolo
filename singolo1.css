@@ -52,7 +52,7 @@ html {
 
 /* HEADER */
 .header {
-  padding: 35px 13px 34px 40px;
+  padding: 30px 13px 30px 40px;
   background: var(--header-bg-color);
   display: flex;
   justify-content: space-between;
@@ -64,6 +64,7 @@ html {
   font-size: 2.5em;
   font-weight: 700;
   text-decoration: none;
+  letter-spacing: -0.04em;
 }
 
 .header__logo-star {
@@ -73,12 +74,16 @@ html {
 .header__nav {
   display: flex;
   list-style: none;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .header__nav-item:not(:last-child) {
-  margin-right: 35px;
+  margin-right: 28.5px;
   position: relative;
+}
+
+.header__nav-item:last-child {
+  margin-right: 27px;
 }
 
 .header__nav-item:not(:last-child)::after {
@@ -108,7 +113,7 @@ html {
 
 /* SLIDER */
 .slider {
-  padding: 53px 41px 58px 41px;
+  padding: 53px 41px 55px 41px;
   background: var(--accent-color-main);
   border-bottom: 6px solid var(--slider-border-color);
 }
@@ -128,7 +133,6 @@ html {
 }
 
 .slider__btn {
-  padding: 1em;
   display: block;
   background: none;
   border: none;
@@ -139,32 +143,38 @@ html {
 .services {
   background: var(--services-bg-color);
   border-bottom: 6px solid var(--services-border-color);
-  padding: 63px 41px;
+  padding: 60px 40px;
 }
 
 .services__title {
   font-size: 3em;
   font-weight: 900;
   color: var(--text-color-darker);
-  margin-bottom: 30px;
+  margin-bottom: 17px;
 }
 
 .services__desc {
   font-size: 1.8em;
   font-weight: 300;
   color: var(--text-color-dark);
-  margin-bottom: 50px;
+  margin-bottom: 44px;
+  line-height: 30px;
+  letter-spacing: 0.007em;
 }
 
 .services__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 35px;
+  row-gap: 30px;
   column-gap: 20px;
 }
 
 .services__service {
   display: flex;
+}
+
+.services__service-icon {
+  margin-top: 2px;
 }
 
 .services__service-block {
@@ -175,11 +185,14 @@ html {
   font-size: 1.8em;
   font-weight: 900;
   color: var(--text-color-darker);
-  margin-bottom: 12px;
+  margin-bottom: 7px;
 }
 
 .services__service-desc {
   font-size: 1.2em;
   font-weight: 400;
   color: var(--text-color-dark);
+  line-height: 1.8em;
+  letter-spacing: 0.001em;
+  word-spacing: 0.3em;
 }
